@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacterial Speck</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body {
+            background-image: linear-gradient(rgb(242, 97, 53), white);
+            font-family: Arial, sans-serif;
+        }
+        div {
+            padding: 20px;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+        #change-language-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            background-color: #fafafa;
+            color: rgb(10, 9, 9);
+            border: none;
+            border-radius: 5px;
+        }
+        #change-language-btn:hover {
+            background-color: #3ffd62;
+        }
+        p, h1, h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .language-container {
+            display: none;
+        }
+        .language-container.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="change-language-btn" aria-label="Change to Bengali">Change to Bengali</button>
+
+        <!-- English Content -->
+        <div class="language-container english active">
+            <p><strong>Bacterial Speck</strong> is a disease that primarily affects tomato plants, caused by the bacterium <em>Pseudomonas syringae</em> pv. <em>tomato</em>. This disease can lead to reduced fruit quality and yield, especially in cooler, wet conditions.</p>
+
+            <h2>Symptoms:</h2>
+            <ul>
+                <li><strong>Leaf Spots:</strong> Small, dark brown to black spots surrounded by yellow halos appear on the leaves. These spots are typically less than 1/8 inch in diameter.</li>
+                <li><strong>Fruit Lesions:</strong> Small, raised, black specks appear on the fruit, usually surrounded by a darker green area. These lesions can make the fruit unmarketable.</li>
+                <li><strong>Stem and Petiole Spots:</strong> Similar spots may also appear on stems and petioles, though they are less common.</li>
+                <li><strong>Blighted Appearance:</strong> In severe cases, the leaves may become blighted, leading to defoliation.</li>
+            </ul>
+
+            <h2>Causes:</h2>
+            <ul>
+                <li><strong>Bacterial Infection:</strong> The disease is caused by <em>Pseudomonas syringae</em> pv. <em>tomato</em>, which is spread by wind-driven rain, contaminated tools, and splashing water.</li>
+                <li><strong>Cool, Wet Conditions:</strong> The bacterium thrives in cool, moist environments, making early spring and late fall particularly risky periods.</li>
+                <li><strong>Infected Seeds:</strong> The bacterium can be seed-borne, leading to early infection in young plants.</li>
+            </ul>
+
+            <h2>Prevention:</h2>
+            <ul>
+                <li><strong>Use Disease-Free Seeds:</strong> Always start with certified disease-free seeds or seedlings to minimize the risk of introducing the bacterium into your garden.</li>
+                <li><strong>Crop Rotation:</strong> Avoid planting tomatoes in the same soil where tomatoes, peppers, or other Solanaceae crops have been grown within the last 2-3 years.</li>
+                <li><strong>Sanitation:</strong> Remove and destroy any plant debris at the end of the season. Clean and disinfect gardening tools regularly to prevent the spread of bacteria.</li>
+                <li><strong>Proper Watering:</strong> Water plants at the base, avoiding overhead watering that can splash bacteria onto the leaves. Drip irrigation is ideal.</li>
+                <li><strong>Space Plants Adequately:</strong> Ensure good air circulation around plants by spacing them appropriately, which helps leaves dry quickly and reduces the chance of bacterial spread.</li>
+            </ul>
+
+            <h2>Solutions:</h2>
+            <ol>
+                <li><strong>Cultural Practices:</strong>
+                    <ul>
+                        <li><strong>Mulching:</strong> Apply mulch around the base of the plants to prevent soil from splashing onto the lower leaves, which can reduce infection.</li>
+                        <li><strong>Remove Infected Plants:</strong> If a plant shows severe symptoms, remove it to prevent the spread to healthy plants.</li>
+                    </ul>
+                </li>
+                <li><strong>Chemical Control:</strong>
+                    <ul>
+                        <li><strong>Copper-Based Sprays:</strong> Apply copper-based bactericides regularly, starting at the first sign of the disease and continuing throughout the season. Be sure to follow the label instructions for application rates and intervals.</li>
+                        <li><strong>Antibiotic Sprays:</strong> In some cases, antibiotic sprays like streptomycin can be used, but their use is often restricted and should be considered as a last resort.</li>
+                    </ul>
+                </li>
+                <li><strong>Resistant Varieties:</strong>
+                    <ul>
+                        <li><strong>Plant Resistant Cultivars:</strong> Some tomato varieties are bred for resistance to bacterial speck. Choosing these varieties can reduce the risk of infection.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Bengali Content -->
+        <div class="language-container bengali">
+            <p><strong>ব্যাকটেরিয়াল স্পেক</strong> একটি রোগ যা প্রধানত টমেটো গাছকে প্রভাবিত করে, ব্যাকটেরিয়া <em>Pseudomonas syringae</em> pv. <em>tomato</em> দ্বারা সৃষ্ট। এই রোগটি শীতল, ভেজা অবস্থায় বিশেষভাবে ফলের গুণমান এবং ফলন কমাতে পারে।</p>
+
+            <h2>লক্ষণ:</h2>
+            <ul>
+                <li><strong>পাতার দাগ:</strong> পাতায় ছোট, গা dark ় বাদামী থেকে কালো দাগ গুলি হলুদ হালোর দ্বারা ঘেরা থাকে। এই দাগগুলি সাধারণত 1/8 ইঞ্চি থেকে কম ব্যাসার্ধের হয়।</li>
+                <li><strong>ফলের ক্ষত:</strong> ফলের উপর ছোট, উঁচু, কালো দাগ দেখা দেয়, সাধারণত একটি অন্ধকার সবুজ এলাকার দ্বারা ঘেরা থাকে। এই ক্ষতগুলি ফলকে বাজারযোগ্য হতে পারে না।</li>
+                <li><strong>স্টেম এবং পেটিওল দাগ:</strong> স্টেম এবং পেটিওলে সাদৃশ্য দাগও দেখা যেতে পারে, যদিও এগুলি কম সাধারণ।</li>
+                <li><strong>ভূমিকা:</strong> গুরুতর ক্ষেত্রে, পাতাগুলি ভ্রষ্ট হতে পারে, যার ফলে পাতা ঝরে পড়তে পারে।</li>
+            </ul>
+
+            <h2>কারণ:</h2>
+            <ul>
+                <li><strong>ব্যাকটেরিয়াল সংক্রমণ:</strong> রোগটি <em>Pseudomonas syringae</em> pv. <em>tomato</em> দ্বারা সৃষ্ট, যা বায়ু-চালিত বৃষ্টি, দূষিত টুল এবং জল স্প্লাশ দ্বারা ছড়িয়ে পড়ে।</li>
+                <li><strong>শীতল, ভেজা অবস্থায়:</strong> ব্যাকটেরিয়া শীতল, ভেজা পরিবেশে বৃদ্ধি পায়, যা প্রাথমিক বসন্ত এবং দেরি পতন বিশেষভাবে ঝুঁকিপূর্ণ সময় তৈরি করে।</li>
+                <li><strong>সংক্রামিত বীজ:</strong> ব্যাকটেরিয়া বীজ-বোর্ন হতে পারে, যা তরুণ গাছগুলিতে প্রাথমিক সংক্রমণ ঘটায়।</li>
+            </ul>
+
+            <h2>প্রতিরোধ:</h2>
+            <ul>
+                <li><strong>রোগমুক্ত বীজ ব্যবহার:</strong> সর্বদা সার্টিফাইড রোগমুক্ত বীজ বা চারা ব্যবহার করুন যা আপনার বাগানে ব্যাকটেরিয়া প্রবেশের ঝুঁকি কমায়।</li>
+                <li><strong>ফসল ঘুরানো:</strong> টমেটো একে অপরের সাথে টমেটো, মরিচ, বা অন্যান্য সোলানাসি ফসলের সাথে শেষ 2-3 বছরে একই মাটিতে রোপণ এড়িয়ে চলুন।</li>
+                <li><strong>স্যানিটেশন:</strong> মৌসুম শেষে যে কোনো গাছের অবশিষ্টাংশ অপসারণ এবং ধ্বংস করুন। বাগান করার টুলগুলি নিয়মিত পরিষ্কার এবং জীবাণুমুক্ত করুন যাতে ব্যাকটেরিয়া ছড়িয়ে না পড়ে।</li>
+                <li><strong>সঠিক জলসেচ:</strong> পাতার উপরে জল দেওয়ার এড়িয়ে চলুন যা ব্যাকটেরিয়া পাতায় স্প্ল্যাশ করতে পারে। ভিত্তি জলসেচ আদর্শ।</li>
+                <li><strong>গাছগুলি যথাযথভাবে স্থান দিন:</strong> গাছগুলির চারপাশে ভাল বায়ু সঞ্চালন নিশ্চিত করুন, যা পাতাগুলি দ্রুত শুকাতে সাহায্য করে এবং ব্যাকটেরিয়ার বিস্তার কমায়।</li>
+            </ul>
+
+            <h2>সমাধান:</h2>
+            <ol>
+                <li><strong>সংস্কৃতিক অনুশীলন:</strong>
+                    <ul>
+                        <li><strong>মালচিং:</strong> গাছগুলির তলায় মালচ প্রয়োগ করুন যাতে মাটি নিম্ন পাতায় না পড়ে, যা সংক্রমণ কমাতে পারে।</li>
+                        <li><strong>সংক্রামিত গাছ অপসারণ:</strong> একটি গাছ গুরুতর লক্ষণ দেখালে, এটি অপসারণ করুন যাতে সুস্থ গাছগুলিতে ছড়িয়ে না পড়ে।</li>
+                    </ul>
+                </li>
+                <li><strong>রাসায়নিক নিয়ন্ত্রণ:</strong>
+                    <ul>
+                        <li><strong>কপার-বেসড স্প্রেয়ার:</strong> রোগের প্রথম চিহ্নে শুরু করে এবং সারা মৌসুম জুড়ে কপার-বেসড ব্যাকটেরিসাইড নিয়মিত প্রয়োগ করুন। প্রয়োগের হার এবং আন্তঃকাল অনুসরণের জন্য লেবেল নির্দেশাবলী মেনে চলুন।</li>
+                        <li><strong>অ্যান্টিবায়োটিক স্প্রেয়ার:</strong> কিছু ক্ষেত্রে, স্ট্রেপ্টোমাইসিনের মতো অ্যান্টিবায়োটিক স্প্রেয়ার ব্যবহার করা যেতে পারে, কিন্তু এর ব্যবহার প্রায়শই সীমিত এবং একটি শেষ রিসর্ট হিসাবে বিবেচনা করা উচিত।</li>
+                    </ul>
+                </li>
+                <li><strong>প্রতিরোধী প্রজাতি:</strong>
+                    <ul>
+                        <li><strong>প্রতিরোধী প্রজাতি রোপণ করুন:</strong> কিছু টমেটো প্রজাতি ব্যাকটেরিয়াল স্পেকের প্রতি প্রতিরোধের জন্য বংশবৃদ্ধি করা হয়। এই প্রজাতিগুলি বেছে নেওয়া সংক্রমণের ঝুঁকি কমাতে পারে।</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <a href="page2.html" class="button-link">Previous</a>
+        <a href="page4.html" class="button-link">Next</a>
+    </div>
+
+    <script>
+        document.getElementById("change-language-btn").addEventListener("click", function() {
+            var englishContainers = document.querySelectorAll(".english");
+            var bengaliContainers = document.querySelectorAll(".bengali");
+
+            englishContainers.forEach(function(container) {
+                container.classList.toggle("active");
+            });
+
+            bengaliContainers.forEach(function(container) {
+                container.classList.toggle("active");
+            });
+
+            // Toggle button text
+            if (this.innerHTML === "Change to Bengali") {
+                this.innerHTML = "Change to English";
+            } else {
+                this.innerHTML = "Change to Bengali";
+            }
+        });
+
+        // Optional: Save language preference to local storage
+        document.addEventListener("DOMContentLoaded", function() {
+            const savedLanguage = localStorage.getItem("language");
+            if (savedLanguage === "bengali") {
+                document.querySelector(".english").classList.remove("active");
+                document.querySelector(".bengali").classList.add("active");
+                document.getElementById("change-language-btn").innerHTML = "Change to English";
+            }
+        });
+
+        document.getElementById("change-language-btn").addEventListener("click", function() {
+            const englishActive = document.querySelector(".english").classList.contains("active");
+            if (englishActive) {
+                localStorage.setItem("language", "bengali");
+            } else {
+                localStorage.setItem("language", "english");
+            }
+        });
+    </script>
+</body>
+</html>
