@@ -1,31 +1,32 @@
+import React, { useEffect, useState } from 'react';
 import "./bright.css";
-export default function Dark(){
-       // script.js
 
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.getElementById('theme-toggle');
+export default function Dark() {
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
-    // Check for saved user preference
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-    toggleButton.classList.toggle('dark-mode', currentTheme === 'dark');
+    useEffect(() => {
+        // Check for saved user preference on component mount
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        setIsDarkMode(currentTheme === 'dark');
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    }, []);
 
-    toggleButton.addEventListener('click', () => {
+    const handleToggle = () => {
         // Toggle dark/light mode
-        document.body.classList.toggle('dark-mode');
-        toggleButton.classList.toggle('dark-mode');
+        const newMode = !isDarkMode;
+        setIsDarkMode(newMode);
+        document.body.classList.toggle('dark-mode', newMode);
         
         // Save the user preference
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    });
-});
-    return<>
-        <body>
-                <div className="container">
-                    <h id="name"></h>
-                <button id="theme-toggle">Dark/Light</button>
-                </div>
-       </body>
-       </>
+        localStorage.setItem('theme', newMode ? 'dark' : 'light');
+    };
+
+    return (
+        <div className="container">
+            <h1 id="name"></h1>
+            <button id="theme-toggle" onClick={handleToggle}>
+                {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+            </button>
+        </div>
+    );
 }
